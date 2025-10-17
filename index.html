@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="eng/mostafasamir">
+    <title>Random Quote Generator</title>
+    <link rel="icon" type="image/png" href="./img/5265761-200.png">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap & css style -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center my-2 p-2">Quote of the Day</h1>
+
+            <div class="quoteInfo">
+                <div class="quoteimg">
+                    <img id="quoteImg" src="./img/1.jpg" alt="Author Img">
+                </div>
+                <div class="quotetexts">
+                    <p id="quoteText" class="text-center my-2 p-1 p_font">
+                        “So many books, so little time.”
+                    </p>
+                    <p id="quoteAuthor" class="text-center my-2 p-1">
+                        ― Frank Zappa
+                    </p>
+                </div>
+            </div>
+
+           <div class="nextQuote">
+             <p class="text-center my-2 p-1 p_font">Press the button below to recieve a random quote!</p>
+            <button type="button" id="newQuoteclick" class="btn btn-dark btn-outline-light w-25 m-auto"
+                onclick="quoteGen()">
+                New Quote
+            </button>
+           </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
